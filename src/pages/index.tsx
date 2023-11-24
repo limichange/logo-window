@@ -26,7 +26,7 @@ export default function Home() {
       )
     )
       return
-    let e = requestAnimationFrame(function e() {
+    let e = requestAnimationFrame(function e2() {
       if (!c.current) return
       ;(window.screen.availWidth !== c.current.width ||
         window.screen.availHeight !== c.current.height ||
@@ -38,7 +38,7 @@ export default function Home() {
           offsetX: window.screenX,
           offsetY: window.screenY,
         }),
-        requestAnimationFrame(e)
+        requestAnimationFrame(e2)
     })
     return () => {
       cancelAnimationFrame(e)
@@ -55,7 +55,7 @@ export default function Home() {
         marginLeft: -(null !== (o = s.offsetX) && void 0 !== o ? o : 0),
       }}>
       <img
-        style={{ width: 300, height: 300 }}
+        style={{ width: 400, height: 400 }}
         src='https://images.unsplash.com/photo-1700587085844-b96c27958df2?q=90&w=1880&auto=format'
         alt='image'
       />
